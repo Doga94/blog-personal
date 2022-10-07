@@ -7,6 +7,13 @@ body{
     font-family: 'Roboto', sans-serif; 
     font-size: 400;
 }
+.home-body{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
 
 /* Header */
 .header{
@@ -37,7 +44,7 @@ body{
     font-size: 25px;
 }
 .social-icons a:hover{
-    color: #F9F871;
+    color: #3ADFBE;
 }
 
 /* Trabajeremos en la parde del logo y el sobre mi */
@@ -62,8 +69,8 @@ body{
 }
 .nav-link a{
     text-decoration: none;
-    color: #000;
-    border-bottom: 1px solid #000
+    color: #00A7D6;
+    border-bottom: 1px solid #00A7D6;
 }
 
 /* Main */
@@ -73,6 +80,8 @@ body{
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
     background-image: url('../imgs/fondo_main.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     opacity: 75%;
 }
@@ -89,4 +98,25 @@ body{
     font-weight: 700;
     letter-spacing: 10px;
     color:  #00A7D6;
+}
+.main-container__text span{
+    background-color: #fff;
+    opacity: 85%;
+}
+/* Boton de principal de Entra ya! */
+
+.main-container__link{
+    background-color: #18BCD9;
+    display: inline-block; /* Para poder trabajar sobre el boton y colocar margenes */
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    height: 45px;
+    border-radius: 5px;
+}
+.main-container__link:hover{
+    background-color: #fff;
+    color: #18BCD9;
 }
